@@ -1,4 +1,6 @@
-meteorDefault
+Discover Meteor
 =============
 
-Just a simple default 
+Walking through the meteor book called 'Discover Meteor'
+
+
