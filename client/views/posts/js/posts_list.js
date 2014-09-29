@@ -18,5 +18,6 @@ var postsData = [
   }
 ];
 Template.postsList.helpers({
+  //Helper for {{posts}}
   posts: postsData
 });
