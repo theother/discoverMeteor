@@ -1,4 +1,18 @@
 
+****************
+Folder Structure
+
++ Lib -- Anyting you put inside the lib folder is gauaranteed to load first before anything else in your
+		 app  (with the possible exception for smary packages). This makes it a greate place to put any
+		 helper code that need to be available at all times. A bit of a warning: not that since the 'lib'
+		 folder is neither inside the /client or /server this, means its contents will be avalible to
+		 both environments.
+
+
+
+
+
+*****************
 Router Vocabulary
 
 + Routes -- Aroute is the basic building block of routing. It is basically the set of instruction
