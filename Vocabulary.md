@@ -68,4 +68,6 @@ Data Contexts
 Methods
 
 	A meteor method is a server-side function that is called client-side. Collections, insert, updata, and remove
-	function are all methods.
+	function are all methods. The Meteor.call function calls a method named by its first argument. You can provide
+	arguments to the call, (in this case the post obj we constructed from the form), and finally attach a callback,
+	which will execute when the server-side Method is done.
