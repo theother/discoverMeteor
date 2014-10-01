@@ -38,3 +38,25 @@ Router Vocabulary
 + Controllers -- Sometimes, you will realize that a lot of your template are resuing the same parameters.
 				 Rather than duplicate your code, you can let all these routes inherit from a single routing 
 				 controller which will contain all the routing logic.
+
+
+*************
+Data Contexts
+
++ By setting a templates data context you can control the value to this inside the tempalte helpers
+
++ This is usally done implicitly with the {{#each}} iterator which automatically sets the data
+  context of each iteration to the item that is currently being iterated on
+  		{{# each widgets}}
+  		  {{> widgetItem}}
+  		{{/each}}
+
++ This can also be done explicitly using {{#with}}, which simply say 
+  'take this obj, and apply the following templat to it'\
+  		{{#with myWidgets}}
+  		  {{> widgetPage}}
+  		{{/with}}
+
++ You can also achieve the same results by passing the context as an argument to the template call
+  So the previous block of code be rewitten as
+  	{{> widgetPage myWidget}}
