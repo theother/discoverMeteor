@@ -60,3 +60,12 @@ Data Contexts
 + You can also achieve the same results by passing the context as an argument to the template call
   So the previous block of code be rewitten as
   	{{> widgetPage myWidget}}
+
+
+
+
+********
+Methods
+
+	A meteor method is a server-side function that is called client-side. Collections, insert, updata, and remove
+	function are all methods.
